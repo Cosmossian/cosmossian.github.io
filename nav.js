@@ -46,6 +46,11 @@
       }).join("") +
       "</div>";
     document.body.insertBefore(nav, document.body.firstChild);
+
+    // Stretch edge to edge even when the page adds padding around its body.
+    var cs = getComputedStyle(document.body);
+    var pt = parseFloat(cs.paddingTop) || 0, pl = parseFloat(cs.paddingLeft) || 0, pr = parseFloat(cs.paddingRight) || 0;
+    nav.style.margin = (-pt) + "px " + (-pr) + "px " + pt + "px " + (-pl) + "px";
   }
 
   if (document.body) build();
