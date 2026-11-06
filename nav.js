@@ -8,7 +8,8 @@
   var LINKS = [
     { href: "/recipe-box/", label: "The Kitchen" },
     { href: "/personal-finance/", label: "The Vault" },
-    { href: "/worksheets/", label: "The Study" }
+    { href: "/worksheets/", label: "The Study" },
+    { href: "/library/", label: "The Library" }
   ];
 
   var css =
